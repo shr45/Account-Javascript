@@ -298,22 +298,22 @@ class User {
     }
 }
 
-let a = User.newAdmin("Shraddha", "M", "IND")
-let u1 = a.newUser("Gunjan", "M", "IND")
-//let u2 = u1.newUser("diya", "M", "IND")
+let a = User.newAdmin("Shraddha", "F", "IND")
+let u1 = a.newUser("Gunjan", "F", "IND")
+//let u2 = u1.newUser("diya", "F", "IND")
  console.log(a);
 // console.log(u1);
 // console.log(u2);
 
-//console.log(a.findUser("Shraddha"));
-let u3 = a.newUser(1234, "M", "IND")
+console.log(a.findUser("Shraddha"));
+let u3 = a.newUser(1234, "F", "IND")
 console.log(u3);
 
 u1.createContact("neha")
 u1.createContact("riya")
 
-// u1.createContact("riya")
-// console.log(u1.getAllContact());
+ u1.createContact("riya")
+ console.log(u1.getAllContact());
 
 // u1.createContactInfo(0, "mobile", 7738530483)
 // u1.createContactInfo(0, "email", "shraddhak729@gmail.com")
